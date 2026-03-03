@@ -1,0 +1,22 @@
+:root{
+  --bg:#0d1117;
+  --accent:#39ff14;
+  --panel-bg:rgba(10,10,12,0.7);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+html,body{height:100%;margin:0;background:var(--bg);color:#ddd;-webkit-font-smoothing:antialiased}
+#glcanvas{position:fixed;left:0;top:0;width:100%;height:100%;display:block}
+#ui-root{position:fixed;left:0;top:0;width:100%;height:100%;pointer-events:none}
+#hud{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none}
+#topbar{display:flex;justify-content:space-between;padding:8px}
+#scoreboard,#minimap,#hp,#ammo{background:var(--panel-bg);padding:6px;border-radius:6px}
+#center-crosshair{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:22px;color:var(--accent);pointer-events:none}
+#left-controls{position:absolute;left:10px;bottom:80px;pointer-events:auto}
+#joystick-bg{width:110px;height:110px;border-radius:55px;background:rgba(255,255,255,0.03);display:flex;align-items:center;justify-content:center}
+#joystick-thumb{width:46px;height:46px;border-radius:23px;background:rgba(255,255,255,0.08)}
+#right-controls{position:absolute;right:12px;bottom:70px;display:flex;flex-direction:column;gap:8px;pointer-events:auto}
+#right-controls button{padding:12px;border-radius:10px;background:rgba(255,255,255,0.06);border:none;color:#fff;font-weight:700}
+#bottombar{position:absolute;left:50%;transform:translateX(-50%);bottom:8px;display:flex;gap:8px;pointer-events:none}
+#loading{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--panel-bg);padding:12px;border-radius:8px}
+.panel{position:absolute;right:14px;top:80px;background:var(--panel-bg);padding:12px;border-radius:8px;pointer-events:auto}
+.hidden{display:none}

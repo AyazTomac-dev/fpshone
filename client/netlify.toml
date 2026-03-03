@@ -1,0 +1,11 @@
+# A:\Yazılım\fpshone\netlify.toml
+[build]
+  # Eğer Netlify'de Git tabanlı deploy yapıyorsan buraya client klasörünü publish etmesini söyle
+  publish = "client"
+  # build command boş (statik), eğer build aşaman varsa buraya ekle
+  command = ""
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

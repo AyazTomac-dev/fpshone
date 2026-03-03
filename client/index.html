@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Procedural WebFPS Demo</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div id="ui-root">
+    <canvas id="glcanvas"></canvas>
+    <div id="hud">
+      <div id="topbar">
+        <div id="scoreboard">Score: <span id="score">0</span></div>
+        <div id="minimap">mini</div>
+      </div>
+      <div id="center-crosshair">+</div>
+      <div id="left-controls">
+        <div id="joystick-bg"><div id="joystick-thumb"></div></div>
+      </div>
+      <div id="right-controls">
+        <button id="btn-fire">Fire</button>
+        <button id="btn-aim">Aim</button>
+        <button id="btn-reload">Reload</button>
+      </div>
+      <div id="bottombar">
+        <div id="hp">HP <span id="hp-val">100</span></div>
+        <div id="ammo">Ammo <span id="ammo-val">30</span>/<span id="ammo-cap">30</span></div>
+      </div>
+    </div>
+    <div id="settings-panel" class="panel hidden">
+      <h3>Settings</h3>
+      <label>Quality <select id="quality"><option>auto</option><option>low</option><option>medium</option><option>high</option></select></label>
+      <label>FOV <input id="fov" type="range" min="60" max="110" value="80"/></label>
+      <button id="resume">Resume</button>
+    </div>
+    <div id="loading">Loading procedural demo...</div>
+  </div>
+
+  <!-- Main entry -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
